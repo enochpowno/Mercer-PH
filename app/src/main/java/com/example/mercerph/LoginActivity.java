@@ -2,6 +2,8 @@ package com.example.mercerph;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import io.paperdb.Paper;
+import io.paperdb.PaperDbException;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -10,20 +12,26 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.mercerph.Controller.Prevalent;
 import com.example.mercerph.Model.Users;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.rey.material.widget.CheckBox;
 
 public class LoginActivity extends AppCompatActivity {
 
     private EditText InputUsername, InputPassword;
     private Button LoginButton;
     private ProgressDialog loadingBar;
+    private TextView AdminLink, NotAdminLink;
+
+    private CheckBox checkBoxRememberMe;
 
     private String parentDbName = "Users";
 
@@ -35,7 +43,14 @@ public class LoginActivity extends AppCompatActivity {
         LoginButton = (Button) findViewById(R.id.login_button);
         InputUsername = (EditText) findViewById(R.id.login_username_input);
         InputPassword = (EditText) findViewById(R.id.login_password_input);
+        AdminLink = (TextView) findViewById(R.id.admin_panel_link);
+        NotAdminLink = (TextView) findViewById(R.id.not_admin_panel_link);
         loadingBar = new ProgressDialog(this);
+        checkBoxRememberMe = (CheckBox) findViewById(R.id.remember_me);
+        Paper.init(this);
+
+
+
 
         LoginButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,6 +88,14 @@ public class LoginActivity extends AppCompatActivity {
 
     private void AllowAccessToAccount(final String username, final String password)
     {
+
+        if(checkBoxRememberMe.isChecked())
+        {
+            Paper.book().write(Prevalent.UserNameKey, username);
+            Paper.book().write(Prevalent.UserPasswordKey, password);
+        }
+
+
         final DatabaseReference RootRef;
         RootRef = FirebaseDatabase.getInstance().getReference();
 

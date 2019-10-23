@@ -1,6 +1,7 @@
 package com.example.mercerph;
 
 import androidx.appcompat.app.AppCompatActivity;
+import io.paperdb.Paper;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -23,6 +24,8 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v)
             {
+                Paper.book().destroy();
+
                 Intent intent = new Intent(HomeActivity.this, MainActivity.class); //sends the user to the Homepage of the App
                 startActivity(intent);
 
