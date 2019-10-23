@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilePage">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="354dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="324dp"
+        android:layout_marginEnd="40dp"
+        android:text="PRIMARY ADDRESS"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout" />
+
+    <Button
+        android:id="@+id/pastOrders2"
+        android:layout_width="288dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="412dp"
+        android:layout_marginEnd="132dp"
+        android:background="@drawable/black_curve"
+        android:gravity="center"
+        android:text="ORDER HISTORY"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <Button
+        android:id="@+id/pastOrders3"
+        android:layout_width="288dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="512dp"
+        android:layout_marginEnd="132dp"
+        android:background="@drawable/black_curve"
+        android:gravity="center"
+        android:text="SETTINGS"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <TextView
+        android:id="@+id/owneradd4"
+        android:layout_width="370dp"
+        android:layout_height="43dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="204dp"
+        android:text="angelgabriel@gmail.com"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nav_menu" />
+
+    <TextView
+        android:id="@+id/owneradd6"
+        android:layout_width="370dp"
+        android:layout_height="43dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="284dp"
+        android:text="68 Guyabano St. Pallet Town, Philippines"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.439"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nav_menu" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="354dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="248dp"
+        android:layout_marginEnd="40dp"
+        android:text="EMAIL ADDRESS"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout" />
+
+    <TextView
+        android:id="@+id/owneradd2"
+        android:layout_width="361dp"
+        android:layout_height="58dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="124dp"
+        android:text="Angel Gabriel"
+        android:textColor="#000000"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.32"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nav_menu" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="354dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="40dp"
+        android:text="ACCOUNT NAME"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout" />
+
+    <Button
+        android:id="@+id/pastOrders"
+        android:layout_width="138dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="132dp"
+        android:background="@drawable/black_curve"
+        android:gravity="center"
+        android:text="MY ACCOUNT"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#000000"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="144dp"
+            android:scaleX="2.3"
+            android:scaleY="2"
+            android:src="@drawable/logo"
+            android:tint="@color/cardview_light_background"
+            app:layout_constraintEnd_toStartOf="@+id/shopcart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/shopcart"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="344dp"
+            android:drawableLeft="@drawable/ic_shopping"
+            android:drawableTint="#ffffff"
+            android:onClick="shopcart"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/hamburger"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="384dp"
+            android:drawableLeft="@drawable/ic_hamburger"
+            android:drawableTint="#ffffff"
+            android:onClick="menu"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            tools:layout_editor_absoluteY="0dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_menu"
+        android:layout_width="140dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="268dp"
+        android:layout_marginTop="68dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/nav_menu" >
+
+    </com.google.android.material.navigation.NavigationView>
+
+    <TextView
+        android:id="@+id/owneradd3"
+        android:layout_width="43dp"
+        android:layout_height="26dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="108dp"
+        android:text="Edit"
+        android:textColor="#099FEE"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

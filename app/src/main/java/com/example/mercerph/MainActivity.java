@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
                             Toast.makeText(MainActivity.this, "Logged in Successfully! ", Toast.LENGTH_SHORT).show();
                             loadingBar.dismiss();
 
-                            Intent intent = new Intent(MainActivity.this, HomeActivity.class); //sends the user to the Homepage of the App
+                            Intent intent = new Intent(MainActivity.this, CatalogPage.class); //sends the user to the Homepage of the App
                             startActivity(intent);
 
                         }
