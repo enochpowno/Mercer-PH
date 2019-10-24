@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "704940621141",
+    "firebase_url": "https://mercer-ph.firebaseio.com",
+    "project_id": "mercer-ph",
+    "storage_bucket": "mercer-ph.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:704940621141:android:1259575eb82e88428c43dc",
+        "android_client_info": {
+          "package_name": "com.example.mercerph"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "704940621141-uovj6ljlq5q8g4od2b28b2k1113g2vqm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mercerph",
+            "certificate_hash": "83f66b21f791b6ec78669a9793b221c84aebb936"
+          }
+        },
+        {
+          "client_id": "704940621141-4qjf01vkl999drspua3b46faikhq49r9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdFgVIrhzYvs0y-c-q_5vzruZaUrDWIk8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "704940621141-4qjf01vkl999drspua3b46faikhq49r9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
