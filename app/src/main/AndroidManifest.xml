@@ -15,6 +15,7 @@
         <activity android:name=".AdminCategoryActivity"></activity>
         <activity android:name=".CartPage"></activity>
         <activity android:name=".CatalogPage"></activity>
+        <activity android:name=".OrderTracker"></activity>
         <activity android:name=".ProfilePage"></activity>
         <activity android:name=".CheckoutPage"></activity>
         <activity android:name=".ItemDetail"></activity>

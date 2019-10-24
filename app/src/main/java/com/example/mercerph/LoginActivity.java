@@ -160,6 +160,7 @@ public class LoginActivity extends AppCompatActivity {
                     }
                     else if (usersData.getUsername().equals("Admin"))
                     {
+
                         Toast.makeText(LoginActivity.this, "Welcome Boss!", Toast.LENGTH_SHORT).show();
                         loadingBar.dismiss();
 

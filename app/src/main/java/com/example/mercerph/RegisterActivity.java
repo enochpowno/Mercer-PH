@@ -62,6 +62,7 @@ public class RegisterActivity extends AppCompatActivity {
             String password = InputPassword.getText().toString();
             String email = InputEmail.getText().toString();
             String address = InputAddress.getText().toString();
+            String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
 
             if (TextUtils.isEmpty(name))
             {
@@ -82,6 +83,11 @@ public class RegisterActivity extends AppCompatActivity {
             else if (TextUtils.isEmpty(email))
             {
                 Toast.makeText(this, "Please Write Your Email Address" , Toast.LENGTH_SHORT).show();
+
+            }
+            else if (!(InputEmail.getText().toString().trim().matches(emailPattern)))
+            {
+                Toast.makeText(this,"Please input valid email address",Toast.LENGTH_SHORT).show();
             }
             else if (TextUtils.isEmpty(address))
             {
