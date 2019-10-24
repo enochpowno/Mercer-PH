@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckoutPage">
+
+    <TextView
+        android:id="@+id/itemAmountText9"
+        android:layout_width="385dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="76dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Ship to: 68 Guyabana St. Pallet Town, Philippines"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.653"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout" />
+
+    <TextView
+        android:id="@+id/itemAmountText8"
+        android:layout_width="354dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="544dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Enter Amount in ₱"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.28"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout" />
+
+    <TextView
+        android:id="@+id/itemAmountText7"
+        android:layout_width="334dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="400dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Shipping                                   ₱ 250    "
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.207"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout" />
+
+    <TextView
+        android:id="@+id/itemAmountText6"
+        android:layout_width="354dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="448dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Please pay this amount            ₱ 2,297 "
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.28"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout" />
+
+    <TextView
+        android:id="@+id/itemAmountText5"
+        android:layout_width="346dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="348dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Merchandise Subtotal          ₱ 2,297 "
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.246"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout" />
+
+    <Button
+        android:id="@+id/pastOrders"
+        android:layout_width="138dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="584dp"
+        android:layout_marginEnd="132dp"
+        android:background="@drawable/black_curve"
+        android:gravity="center"
+        android:text="CHECK OUT"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#000000"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="144dp"
+            android:scaleX="2.3"
+            android:scaleY="2"
+            android:src="@drawable/logo"
+            android:tint="@color/cardview_light_background"
+            app:layout_constraintEnd_toStartOf="@+id/shopcart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/shopcart"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="344dp"
+            android:drawableLeft="@drawable/ic_shopping"
+            android:drawableTint="#ffffff"
+            android:onClick="shopcart"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/hamburger"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="384dp"
+            android:drawableLeft="@drawable/ic_hamburger"
+            android:drawableTint="#ffffff"
+            android:onClick="menu"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            tools:layout_editor_absoluteY="0dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_menu"
+        android:layout_width="146dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="264dp"
+        android:layout_marginTop="76dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout"
+        app:menu="@menu/nav_menu" />
+
+    <TextView
+        android:id="@+id/itemAmountText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="144dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="3 Items"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/itemAmountText2"
+        android:layout_width="386dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="172dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Logo Hoodie          ₱ 999"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.64"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout" />
+
+    <TextView
+        android:id="@+id/itemAmountText3"
+        android:layout_width="386dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="228dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Flagship Tee          ₱ 649"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.64"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout" />
+
+    <TextView
+        android:id="@+id/VISUALSTEE"
+        android:layout_width="386dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="284dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Visuals Tee            ₱ 649"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.64"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="532dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="e.g. ₱ 500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

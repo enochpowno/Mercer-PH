@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ItemDetail">
+
+
+
+    <ImageView
+        android:id="@+id/itemview"
+        android:layout_width="385dp"
+        android:layout_height="331dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="43dp"
+        app:srcCompat="@drawable/logohoodieblack" />
+
+    <TextView
+        android:id="@+id/namecolor"
+        android:layout_width="86dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="525dp"
+        android:gravity="center"
+        android:text="Color:"
+        android:textColor="#000000"
+        android:textSize="27dp" />
+
+    <TextView
+        android:id="@+id/namesize"
+        android:layout_width="86dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="525dp"
+        android:gravity="center"
+        android:text="Size:"
+        android:textColor="#000000"
+        android:textSize="27dp" />
+
+    <TextView
+        android:id="@+id/itemprice"
+        android:layout_width="385dp"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="445dp"
+        android:gravity="center"
+        android:text="649 Php"
+        android:textColor="#000000"
+        android:textSize="27dp" />
+
+    <Spinner
+        android:id="@+id/sizespin"
+        android:layout_width="128dp"
+        android:layout_height="51dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="236dp"
+        android:layout_marginTop="567dp" />
+
+    <Spinner
+        android:id="@+id/colorspin"
+        android:layout_width="128dp"
+        android:layout_height="51dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="567dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="659dp"
+        android:onClick="addtocart"
+        android:text="Add To Cart" />
+
+    <TextView
+        android:id="@+id/itemname"
+        android:layout_width="385dp"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="395dp"
+        android:gravity="center"
+        android:text="Logo Hoodie"
+        android:textColor="#000000"
+        android:textSize="40dp" />
+
+</RelativeLayout>
