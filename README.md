@@ -1,2 +1,2 @@
 # Mercer-PH
-Mercer PH's Android app for Sofengg
+Mercer PH's Website for Sofengg
